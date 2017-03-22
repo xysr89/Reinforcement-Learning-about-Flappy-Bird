@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0" />
+
+    <title>Flappy Bird Demo</title>
+
+    <link rel="stylesheet" href="res/main.css">
+</head>
+<body>
+	
+
+	<h3><p id="demo" align="center"></p></h3>
+	
+	
+	<section>
+        <canvas id="board"></canvas>
+        <!-- <div class="tip">
+            <a href="http://www.mrspeaker.net/tips/" title="Tip some coinz">much tips. wow.</a>
+        </div> -->
+    </section>
+    <!-- <footer>
+        <div class="desc">
+            Games<br/>by<br/><a href="http://www.twitter.com/mrspeaker">Mr Speaker</a>.
+        </div>
+        <div>
+            <a href="http://www.mrspeaker.net/dev/ld27">
+                <img src="res/images/th-tfs-carl.png" style="float-left" width="60" /><br/>
+            </a>
+        </div>
+        <div class="desc">
+            <a href="http://www.mrspeaker.net/dev/ld27">Time flies straight</a><br/>
+         a non-usual game<br/>
+            featuring carl sagan.</div>
+        <div>
+            <a href="http://www.mrspeaker.net/dev/game/digibots">
+                <img src="res/images/digibots-level.jpg" width="60" />
+            </a>
+        </div>
+        <div class="desc">
+             <a href="http://www.mrspeaker.net/dev/game/digibots">DIGIBOTS & CO.</a><br/>
+             Inside-out<br/>"Lemmings"...ish.
+        </div>
+        <div>
+            <a href="http://mrspeaker.net/dev/game/glowbougs">
+                <img src="res/images/glowbougs.jpg" width="60" />
+            </a>
+        </div>
+        <div class="desc">
+            <a href="http://mrspeaker.net/dev/game/glowbougs">Glowbougs</a><br/>
+            JS13k entry
+        </div>
+        <div>
+            <a href="http://www.mrspeaker.net/dev/ld22">
+                <img src="res/images/zmore.png" width="60" />
+            </a>
+        </div>
+        <div class="desc">
+            <a href="http://www.mrspeaker.net/dev/ld26/">Zmore</a><br/>
+            Minimalist lazer<br/>dubstep platformer
+        </div>
+        <div>
+            <a href="http://www.mrspeaker.net/">
+                <img src="res/images/blog.png" width="60" />
+            </a>
+        </div>
+        <div class="desc">
+            Much more<br/>wackiness<br/>
+            <a href="http://www.mrspeaker.net/">on ma' blog</a>
+        </div>
+
+        <div id="twitter">
+            <a href="http://www.mrspeaker.net/tips/" title="Tip some coinz"><img src="res/images/doge.png" width="60" /></a>
+            <a href="http://www.twitter.com/mrspeaker"><img src="res/images/twitter.png" width="60" /></a>
+        </div>
+
+
+    </footer> -->
+
+    <!-- <div id="mmb">
+        <div>
+        <a style="float:left" href="https://itunes.apple.com/us/app/wafty-man/id824792309">
+            <img src="res/images/wm-icon.png" width="60" />
+        </a>
+         <div class="desc">
+            <div class="mmbtitle"><a href="https://itunes.apple.com/us/app/wafty-man/id824792309">Wafty Man</a></div>
+            The most accurate Flappy Bird clone out there. Made with love. <a href="https://itunes.apple.com/us/app/wafty-man/id824792309">Free to play, NOW!</a>
+        </div>
+        </div>
+
+        <div style="clear:both">
+        <a style="float:left" href="https://itunes.apple.com/us/app/mister-moonboots/id806971888">
+            <img src="res/images/mmb.png" width="60" />
+        </a>
+         <div class="desc">
+            <div class="mmbtitle"><a href="https://itunes.apple.com/us/app/mister-moonboots/id806971888">Mister Moonboots</a></div>
+            Free game for the iPad by Mr Speaker: Like bouncing? Dub? The infinity of space? <a href="https://itunes.apple.com/us/app/mister-moonboots/id806971888">Play NOW!</a>
+        </div>
+        </div>
+    </div> -->
+
+
+    <!-- Ω500 lib -->
+    <script src="lib/Ω500.js"></script>
+
+    <!-- Game -->
+    <script src="src/game.js"></script>
+    <script src="src/entities/Bird.js"></script>
+    <script src="src/entities/Pipe.js"></script>
+    <script src="src/screens/MainScreen.js"></script>
+    <script src="src/screens/TitleScreen.js"></script>
+    <script>
+        var game = new OmegaGame(288, 512);
+    </script>
+
+    <script>
+        // Goog' it.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8233321-3', 'mrspeaker.net');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
